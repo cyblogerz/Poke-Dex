@@ -1,0 +1,11 @@
+.NavBar{
+    position: sticky;
+    top: 0;
+   
+    background-color: black;
+    color: red;
+    font-family: consolas;
+}
+
+.title{
+}
