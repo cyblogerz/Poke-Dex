@@ -1,8 +1,25 @@
 .container{
     background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/10/27/825565/a8f967ede1e1e41abc91787415e3b9ee.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    height: 95vh;
+}
 
-    width: 100%;
+.heading{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    position: absolute;
+    top: 20%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    
+}
 
+.main{
+    background-color: black;
+    height: 100vh;
+    
 }
