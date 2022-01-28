@@ -1,15 +1,19 @@
-import React from "react";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState,useEffect } from "react";
 import "./NavBar.css";
 
-export default function NavBar(){
+const hamburger = <FontAwesomeIcon size="2x" icon={faBars}/>
+
+export default function NavBar(props){
     return(
         <div className="NavBar">
         <h1 className="title">PokeDex</h1>
-        <ul className="links">
-            <li className="nav-link"><a href="/">About</a></li>
-            <li className="nav-link"><a href="/">Pokemon </a> </li>
-            <li className="className"><a href="/">Home</a></li>
-        </ul>
+        {props.isTab ? <div className="menu ham">{hamburger}</div> : <ul className="links">
+            <li className="menu"><a href="/">About</a></li>
+            <li className="menu"><a href="/">Pokemon </a> </li>
+            <li className="menu"><a href="/">Home</a></li>
+        </ul>}
         </div>
     );
 }

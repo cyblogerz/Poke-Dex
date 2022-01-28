@@ -14,7 +14,7 @@
     padding: 0;
 }
 
-li{
+.menu{
     display: inline;
     float: right;
     margin: 10px;
@@ -30,4 +30,9 @@ a{
 .title{
     float: left;
     padding-left: 16px;
+}
+
+.ham{
+    margin-top:21px ;
+    margin-left: 10px;
 }
