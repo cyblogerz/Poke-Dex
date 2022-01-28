@@ -6,7 +6,12 @@ export default function Home() {
   <div>
   <div className='container'></div>
   <h1 className='heading'>Poké-Dex</h1>
-  <div className="main"></div>
+  <button className="surp">Surprise Me! 🎁</button>
+  <div className="main">
+
+     <h1 className="mtitle heading">POKÉMON GALLERY</h1>
+  </div>
+  
   </div>
   );
   
