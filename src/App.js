@@ -9,7 +9,7 @@ function App() {
   const isDark = colorMode === 'dark';
   return <VStack p={'0'}>
     <Flex  p={'5'}width={'100%'} zIndex={'2'} shadow={'lg'}  bg={isDark? 'hsl(220, 26%, 14%)' : 'white'} position={'fixed'}>
-      <Heading size={"lg"} color={'cyan.400'}>Poke-Dex</Heading>
+      <Heading size={"lg"} color={'cyan.400'} fontWeight={'400'}> Poké-Dex</Heading>
       <Spacer />
       {
         isNotTablet ? <Box>
