@@ -1,40 +1,28 @@
-import './App.css';
-import React ,{useState , useEffect} from 'react';
-import NavBar from './components/NavBar/NavBar';
-import Home from './pages/home/Home';
-
-const mediaQuery = {
-  desktop: 1200,
-  tablet: 768,
-  phone: 576,
-};
-
-const screenSize = document.body.clientWidth;
-
+import React from 'react';
+import {FaBars,FaMoon,FaSun} from 'react-icons/fa'
+import {VStack,Flex,Heading,Spacer,Box,Button,useMediaQuery,IconButton, useColorMode} from '@chakra-ui/react';
+import Home from './pages/home/Home'
 
 function App() {
-const [windowWidth,setWidth] = useState(screenSize);
-
-useEffect(() => {
-    window.addEventListener("resize",()=>{
-        setWidth(
-            document.body.clientWidth,
-        );
-    }
-
-    );
-});
-
-const isTablet = windowWidth < mediaQuery.tablet;
-
-
-  return (
-    <div className="App">
-      <NavBar isTab={isTablet}/>
-      <Home isTab={isTablet}/>
-     
-    </div>
-  );
+  const [isNotTablet]  = useMediaQuery("(min-width:600px)");
+  const {colorMode , toggleColorMode} =  useColorMode();
+  const isDark = colorMode === 'dark';
+  return <VStack p={'0'}>
+    <Flex  p={'5'}width={'100%'} zIndex={'2'} shadow={'lg'}  bg={isDark? 'hsl(220, 26%, 14%)' : 'white'} position={'fixed'}>
+      <Heading size={"lg"} bgGradient={'linear(to-r,red.100,pink.400,purple.500)'} bgClip={'text'}>Poke-Dex</Heading>
+      <Spacer />
+      {
+        isNotTablet ? <Box>
+        <Button colorScheme='red' mr={8}>Home</Button>
+        <Button colorScheme='red' mr={8}>Pokemon</Button>
+        <Button colorScheme={'red'}mr={8}>About</Button>
+        <IconButton isRound={'true'} colorScheme={'red'} onClick={toggleColorMode} icon={isDark ? <FaSun /> : <FaMoon />}/> </Box>
+ : <IconButton icon={<FaBars />}isRound={'true'}/>
+      }
+    
+    </Flex>
+    <Home />
+  </VStack>;
 }
 
 export default App;

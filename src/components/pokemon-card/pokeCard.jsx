@@ -1,20 +1,21 @@
 import React from 'react';
 import "./pokeCard.css"
-
-const tabStyle = {
-    color:"red",
-}
+import { Box,Image,Heading,Text } from '@chakra-ui/react';
 
 function PokeCard(props) {
-    return <div className='card' style={props.isTab ? {minWidth : "100%"} : null}>
-    <div className="card-img"></div>
-    <div className="pinfo">
-    <p className="num">{props.num}</p>
-    <h1 className='poke-name'>{props.name}</h1>
-    </div>
-   
-    <div className="type">{props.type}</div>
-    </div>;
+    return <Box borderRadius={'10px'} shadow={'xl'} p={'20px'} border={'1px'} height={'50vh'}>
+    <Image 
+    pb={'30px'}
+    src={props.url} 
+    fit={'contain'}
+    borderRadius={'10px'}
+    />
+    <Heading size={'md'}>{props.num}</Heading>
+    <Heading size={'md'} pb={'20px'}>
+      {props.name}
+    </Heading>
+    <Box borderRadius={'10px'} pl={'10px'} bgColor={'green'} ><Text>{props.type}</Text></Box>
+  </Box>
 }
 
 export default PokeCard;
