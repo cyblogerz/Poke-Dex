@@ -1,7 +1,8 @@
 import React from 'react';
+import PokeCard from '../../components/pokemon-card/pokeCard';
 import './home.css'
 
-export default function Home() {
+export default function Home(props) {
   return( 
   <div>
   <div className='container'></div>
@@ -10,6 +11,7 @@ export default function Home() {
   <div className="main">
 
      <h1 className="mtitle heading">POKÉMON GALLERY</h1>
+     <PokeCard num={"001"} name={"Bulbasaur"} type={"fire"} isTab={props.isTab} />
   </div>
   
   </div>

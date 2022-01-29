@@ -31,7 +31,7 @@ const isTablet = windowWidth < mediaQuery.tablet;
   return (
     <div className="App">
       <NavBar isTab={isTablet}/>
-      <Home />
+      <Home isTab={isTablet}/>
      
     </div>
   );
