@@ -13,7 +13,7 @@ function App() {
       <Spacer />
       {
         isNotTablet ? <Box>
-        <Button colorScheme='red' mr={8}>Home</Button>
+        <Button colorScheme='cyan' mr={8}>Home</Button>
         <Button colorScheme='red' mr={8}>Pokemon</Button>
         <Button colorScheme={'red'}mr={8}>About</Button>
         <IconButton isRound={'true'} colorScheme={'red'} onClick={toggleColorMode} icon={isDark ? <FaSun /> : <FaMoon />}/> </Box>

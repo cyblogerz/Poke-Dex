@@ -12,7 +12,7 @@ export default function Home(props) {
       <Heading position={'absolute'} top={'20%'}>Poke-Dex</Heading>
       <Box height={'100vh'} width={'100%'} p={'100px'}>
       <Heading pt={'100px'} textAlign={'center'} mb={'100px'}>Pokemon Gallery</Heading>
-      <SimpleGrid columns={'4'} spacingX={'30px'} width={'100%'} spacingY={'35px'}>
+      <SimpleGrid columns={'4'}  spacingX={'30px'}  spacing={'45px'}>
       <PokeCard url={'https://am1codes.github.io/Poke-Dex/images/Mega%20Charizard%20X.png' }
         name={'Bulbasaur'} num={'001'} type={'Green'}
       />

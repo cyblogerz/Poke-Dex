@@ -1,32 +1,11 @@
-.card{
-    max-width:20%;
-    overflow-wrap: break-word;
-    padding: 10px;
-    max-height: 70vh;
-    background-clip: border-box;
-    background-color: red;
-    border-radius: 10px;
-    flex-direction: column;
-    color: white;
+.pokeCard{
+    box-shadow:  1px 1px 10px cyan,1px 1px 10px cyan,1px 1px 20px cyan,1px 1px 40px cyan;
     transition: transform 0.2s;
 }
 
-.card:hover{
+.pokeCard:hover{
     transform: scale(1.05);
 }
 
-.card-img{
-    background-image: url(https://am1codes.github.io/Poke-Dex/images/Mega%20Charizard%20X.png);
-    height: 250px;
-    padding: 32px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 75%;
-}
 
-
-.pinfo{
-    text-align: left;
-}
 
