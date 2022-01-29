@@ -1,15 +1,19 @@
 import React from 'react';
 import PokeCard from '../../components/pokemon-card/pokeCard';
-import { Image,Box, Heading,Container,Text, SimpleGrid} from '@chakra-ui/react';
+import { Image,Box, Heading,Container,Text, SimpleGrid, IconButton, Flex} from '@chakra-ui/react';
 import './home.css'
+import { FaArrowDown } from 'react-icons/fa';
 //'https://www.wallpaperup.com/uploads/wallpapers/2015/10/27/825565/a8f967ede1e1e41abc91787415e3b9ee.jpg'
 
 export default function Home(props) {
   return( 
     
     <Box p={'0'} width={'100%'}>
-      <Image width={'100%'} fit={'cover'} height={'100vh'} src={'https://www.wallpaperup.com/uploads/wallpapers/2015/10/27/825565/a8f967ede1e1e41abc91787415e3b9ee.jpg'}/>
+      <Image width={'100%'} fit={'cover'} height={'90vh'} src={'https://www.wallpaperup.com/uploads/wallpapers/2015/10/27/825565/a8f967ede1e1e41abc91787415e3b9ee.jpg'}/>
       <Heading position={'absolute'} top={'20%'}>Poke-Dex</Heading>
+      <IconButton position={'relative'} 
+      bottom={'15px'} bgColor={'black'} left={'48%'}
+      icon={<FaArrowDown/>} isRound={'True'}/>
       <Box height={'100vh'} width={'100%'} p={'100px'}>
       <Heading pt={'100px'} textAlign={'center'} mb={'100px'}>Pokemon Gallery</Heading>
       <SimpleGrid columns={'4'}  spacingX={'30px'}  spacing={'45px'}>
