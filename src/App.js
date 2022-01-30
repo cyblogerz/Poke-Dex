@@ -21,7 +21,7 @@ function App() {
       }
     
     </Flex>
-    <Home />
+    <Home isNotTablet={isNotTablet} />
   </VStack>;
 }
 

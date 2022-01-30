@@ -40,9 +40,9 @@ export default function Home(props) {
     Compact
   </Button>
 </Stack>
-      <SimpleGrid columns={isCompact ? '6' : '4'}  spacingX={'30px'}  spacing={'45px'}>
+      <SimpleGrid columns={isCompact ? (props.isNotTablet ? '6' : '2' ) : (props.isNotTablet ? '4' : '1' )}  spacingX={'30px'}  spacing={'45px'}>
       <PokeCard url={'https://am1codes.github.io/Poke-Dex/images/Mega%20Charizard%20X.png' }
-      isCompact={isCompact}
+      isCompact={isCompact} isNotTablet = {props.isNotTablet}
         name={'Bulbasaur'} num={'001'} type={'Green'}
       />
        <PokeCard url={'https://am1codes.github.io/Poke-Dex/images/Mega%20Charizard%20X.png' }
