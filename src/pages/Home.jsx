@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import PokeCard from '../../components/pokeCard';
-import { Image,Box, Heading,Button,Stack, SimpleGrid, IconButton, Flex, Spacer} from '@chakra-ui/react';
+import PokeCard from '../components/pokeCard';
+import { Image,Box, Heading,Button,Stack, SimpleGrid, Spacer} from '@chakra-ui/react';
 import { FaArrowDown,FaBaseballBall } from 'react-icons/fa';
 //'https://www.wallpaperup.com/uploads/wallpapers/2015/10/27/825565/a8f967ede1e1e41abc91787415e3b9ee.jpg'
 
 export default function Home(props) {
   const [isCompact , setCompact] = useState(false);
-
   return( 
     <Box p={'0'}  m={'0'} >
 
