@@ -11,7 +11,7 @@ function PokeCard(props) {
       transform: 'scale(1.05)'
     }}
     
-    boxShadow={'1px 1px 10px cyan,1px 1px 10px cyan,1px 1px 20px cyan,1px 1px 40px cyan;'}
+    boxShadow={'1px 1px 10px cyan,1px 1px 10px cyan,1px 1px 10px cyan,1px 1px 40px cyan;'}
      flexDirection={'column'}  borderRadius={'10px'}  p={props.isCompact ?'30px' : '20px' }   >
     <Image 
     // boxSize={props.isNotTablet ? null : '300px'}
