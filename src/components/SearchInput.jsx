@@ -19,7 +19,7 @@ function SearchInput() {
           value={value}
         />
         <InputRightElement width='4.5rem'>
-          <IconButton  size='sm' isRound={'true'} onClick={handleClick} icon={<FaSearch />} />
+          <IconButton size='sm' isRound={'true'} onClick={handleClick} icon={<FaSearch />} />
         </InputRightElement>
       </InputGroup>
     )
