@@ -4,7 +4,7 @@ import {VStack,Flex,Heading,Spacer,Box,Button,useMediaQuery,IconButton, useColor
 import Home from './pages/home/Home'
 
 function App() {
-  const [isNotTablet]  = useMediaQuery("(min-width:600px)");
+  const [isNotTablet]  = useMediaQuery("(min-width:991px)");
   const {colorMode , toggleColorMode} =  useColorMode();
   const isDark = colorMode === 'dark';
   return <VStack p={'0'}>
